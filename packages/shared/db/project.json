@@ -1,0 +1,19 @@
+{
+  "name": "db",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/shared/db/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/shared/db",
+        "main": "packages/shared/db/src/index.ts",
+        "tsConfig": "packages/shared/db/tsconfig.lib.json",
+        "assets": ["packages/shared/db/*.md"]
+      }
+    }
+  }
+}

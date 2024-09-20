@@ -1,0 +1,19 @@
+{
+  "name": "team2-c",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/team2/c/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/team2/c",
+        "main": "packages/team2/c/src/index.ts",
+        "tsConfig": "packages/team2/c/tsconfig.lib.json",
+        "assets": ["packages/team2/c/*.md"]
+      }
+    }
+  }
+}

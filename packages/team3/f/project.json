@@ -1,0 +1,19 @@
+{
+  "name": "team3-f",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/team3/f/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/team3/f",
+        "main": "packages/team3/f/src/index.ts",
+        "tsConfig": "packages/team3/f/tsconfig.lib.json",
+        "assets": ["packages/team3/f/*.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@acme/a": ["packages/team1/a/src/index.ts"],
+      "@acme/b": ["packages/team1/b/src/index.ts"],
+      "@acme/c": ["packages/team2/c/src/index.ts"],
+      "@acme/d": ["packages/team2/d/src/index.ts"],
+      "@acme/db": ["packages/shared/db/src/index.ts"],
+      "@acme/e": ["packages/team3/e/src/index.ts"],
+      "@acme/f": ["packages/team3/f/src/index.ts"],
+      "@acme/ui": ["packages/shared/ui/src/index.ts"],
+      "@acme/util": ["packages/shared/util/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

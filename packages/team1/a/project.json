@@ -1,0 +1,19 @@
+{
+  "name": "team1-a",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/team1/a/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/team1/a",
+        "main": "packages/team1/a/src/index.ts",
+        "tsConfig": "packages/team1/a/tsconfig.lib.json",
+        "assets": ["packages/team1/a/*.md"]
+      }
+    }
+  }
+}
