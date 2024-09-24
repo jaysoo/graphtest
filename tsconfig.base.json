@@ -22,6 +22,7 @@
       "@acme/db": ["packages/shared/db/src/index.ts"],
       "@acme/e": ["packages/team3/e/src/index.ts"],
       "@acme/f": ["packages/team3/f/src/index.ts"],
+      "@acme/foo": ["packages/foo/src/index.ts"],
       "@acme/ui": ["packages/shared/ui/src/index.ts"],
       "@acme/util": ["packages/shared/util/src/index.ts"]
     }
